@@ -1,0 +1,128 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+<div class="row text center" id="make">
+<div class="col-md-12">
+<h3 id="contact">Booking</h3>
+</div>
+</div>
+
+<div class="row " id="exe">
+<div class="col-md-12">
+<h4 id="italic">Luxury Salon Premium Booking</h4>
+<h3 class="head">GET APPOINMENT</h3>
+</div>
+</div>
+
+<div class="container">
+            <div class="row">
+			<form action="/insertappointment" method="post">
+{% csrf_token %}
+                <div class="col-md-6">
+                    <div class="well-block">
+                        <div class="well-title">
+                            <h2 id="four">Questions? Book an Appointment</h2>
+                        </div>
+                        <form>
+                            <!-- Form start -->
+							<div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label" for="name" id="font">Name</label>
+                                        <input id="fon" name="name" type="text" placeholder="Name" class="form-control input-md">
+                                    </div>
+                                </div>
+                                <!-- Text input-->
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label" for="email" id="font">Email</label>
+                                        <input id="fon" name="email" type="text" placeholder="E-Mail" class="form-control input-md">
+                                    </div>
+                                </div>
+                                <!-- Text input-->
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label" for="date" id="font">Preferred Date</label>
+                                        <input id="fon" name="date" type="text" placeholder="Preferred Date" class="form-control input-md">
+                                    </div>
+                                </div>
+                                <!-- Select Basic -->
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label" for="time" id="font">Preferred Time</label>
+                                       <select id="fon" name="time" class="form-control">
+                                            <option value="8:00 to 9:00">8:00 to 9:00</option>
+                                            <option value="9:00 to 10:00">9:00 to 10:00</option>
+                                            <option value="10:00 to 1:00">10:00 to 1:00</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <!-- Select Basic -->
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label class="control-label" for="appointmentfor" id="font">Appointment For</label>
+                                        <select id="fon" name="appointmentfor" class="form-control"  >
+                                            <option value="Spa" id="font">Spa</option>
+											<option value="Natural Beauty" id="font">Natural Beauty</option>
+                                            <option value="Pedicure & Medicure" id="font">Pedicure & Medicure</option>
+                                            <option value="Bridal Makeup" id="font">Bridal Makeup</option>
+                                            <option value="Hair" id="font">Hair</option>
+											<option value="Mehndi" id="font">Mehndi</option>
+											<option value="Party Makeup" id="font">Party Makeup</option>
+                                        </select>
+                                    </div>
+                                
+							</div>
+								<!-- Select Basic -->
+								<div class="col-md-12">
+                                    <div class="form-group">
+                                        <label class="control-label" for="appointmentPlace" id="font">appointment Place</label>
+                                        <select id="fon" name="appointmentplace" class="form-control"  >
+                                            <option value="Appointment at Home" id="font">Appointment at Home</option>
+											<option value="Appointment at Salon" id="font">Appointment at Salon</option>
+                                            
+                                        </select>
+                                    </div>
+                                </div>
+                                <!-- Button -->
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <button id="button" name="singlebutton" class="btn btn-default" id="butt">Make An Appointment</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <!-- form end -->
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="well-block">
+                        <div class="well-title">
+                            <h2 class="head" id="four">Why Appointment with Us</h2>
+                        </div>
+                        <div class="feature-block">
+                            <div class="feature feature-blurb-text">
+                                <h4 class="feature-title" id="font">24/7 Hours Available</h4>
+                                <div class="feature-content">
+                                </div>
+                            </div>
+                            <div class="feature feature-blurb-text">
+                                <h4 class="feature-title" id="font">Experienced Staff Available</h4>
+                                <div class="feature-content">
+                                    
+                                </div>
+                            </div>
+                            <div class="feature feature-blurb-text">
+                                <h4 class="feature-title" id="font">Low Price & Fees</h4>
+                                <div class="feature-content">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+{% endblock %}

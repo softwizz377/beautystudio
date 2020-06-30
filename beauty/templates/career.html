@@ -1,0 +1,113 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+<div class="row text center" id="career">
+<div class="col-md-12">
+<h3 id="contact">Career</h3>
+</div>
+</div>
+<div class="row " id="exe">
+<div class="col-md-12">
+<h4 id="italic">Experience the Art of Caring</h4>
+</div>
+<br>
+<br>
+<div class="col-md-12">
+<h3 class="head" >BEAUTY STUDIO JOB LETTER</h3>
+</div>
+<br>
+<br>
+
+<div class="col-md-4">
+<img src="{% static 'ey.jpg' %}"  height="400" width="100%">
+</div>
+ <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">!-->
+
+<style>
+.inputstl { 
+    padding: 9px; 
+    border: solid 1px #173955; 
+    outline: 0; 
+    background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #AACCE8), to(#FFFFFF)); 
+    background: -moz-linear-gradient(top, #FFFFFF, #AACCE8 1px, #FFFFFF 25px); 
+    box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; 
+    -moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; 
+    -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px; 
+
+    } 
+   
+</style>
+
+
+<div class="col-md-8 ">
+ <form action="/insertcareer" method="post" enctype="multipart/form-data">
+ {% csrf_token %}
+<br><div class="row">
+                                
+                                     <div class="col-md-6 ">
+                                        <label id="font">Name</label>
+                                        <input id="fon" name="name" type="text" placeholder="Name" class="form-control input-md">
+                                    </div>
+                                
+                                <!-- Text input-->
+                                <div class="col-md-6 ">
+                                    
+                                        <label class="control-label" for="email" id="font">Email</label>
+                                        <input id="fon" name="email" type="text" placeholder="E-Mail" class="form-control input-md">
+                                    
+                                </div>
+                                <!-- Text input-->
+                               
+                                <!-- Select Basic -->
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label" for="gender" id="font">Gender</label>
+                                        <select id="fon" name="gender" class="form-control">
+                                            <option value="female">Female</option>
+                                            <option value="male">Male</option>
+
+                                        </select>
+                                    </div>
+                                </div>
+                                  <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label" for="address" id="font">Address</label>
+                                        <input id="fon" name="address" type="text" placeholder="address" class="form-control input-md">
+                                    </div>
+                                </div>        
+<div class="col-md-6">	
+ <div class="form-group">							
+      <label for="phoneno" id="font">Phoneno</label>
+    <input type="text" id="fon" name="phone"   pattern="[6|7|8|9][0-9]{9}" required placeholder="enter your number..." /><br>
+	</div>
+</div>	
+	  <div class="form-group">
+        <label for="selphoto" class="col-md-6 control-label" id="font" > Resume Upload:</label>
+        <div class="col-md-5">
+          <input type="file" class="inputstl" id="selphoto" name="sentfile">
+        </div>
+      </div>
+ <br>
+<br> 
+<br>      
+   
+	 <div class="form-group">
+        <div class="col-md-offset-2 col-md-6">
+          <button type="submit" class="btn btn-lg btn-block btn-primary" id="font">Submit</button>
+        </div>
+      </div>
+	  </form>
+   </div> 
+</div> 
+</div> 
+<script>
+			$('#selphoto').filestyle({
+				buttonName : 'btn-primary',
+                buttonText : ' Upload an Image',
+                iconName : 'glyphicon glyphicon-upload'
+			});
+</script>   
+
+
+{% endblock %}

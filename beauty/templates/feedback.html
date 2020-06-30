@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+<div class="row" id="form">
+<div class="col-md-12">
+<h3 class="head">FEEDBACK</h3>
+</div>
+</div>
+<div class="container" id="Name" >
+<form action="/insertfeedback" method="post">
+{% csrf_token %}
+<div class=" col-md-offset-3 col-md-6 col-md-offset-3 " id="radio">
+
+    <div class="row" id="feed">
+        <form role="form" class=" col-md-6">
+            <h2 id="fcent" class="head">Feedback Form</h2>
+			<class="form-group">
+			<label class="radio-inline" id="font">
+			 <input  type="radio" name="experience" id="radio-experience" value="bad">
+			<p id="font">Bad</p>
+			</label>
+			<class="form-group">
+			<label class="radio-inline" id="font">
+			 <input  type="radio" name="experience" id="radio-experience" value="Average">
+			<p id="font"> Average</p>
+			</label>
+			<class="form-group">
+			<label class="radio-inline" id="font">
+			 <input  type="radio" name="experience" id="radio-experience" value="good" >
+			<p id="font">Good</p>
+			</label>
+			</div>
+			<br>
+			<br>
+            <div class="form-group">
+			<label for="name" id="font">Your Name</label>
+            <input id="fon" name="name" type="text" class="form-control" required>
+        </div>
+        <div class="form-group">
+		<label for="email" id="font">Email</label>
+            <input id="fon" name="email" type="email" class="form-control" required>
+           
+        </div>
+        <div class="form-group">
+		<label for="phone" id="font">Primary Phone</label>
+            <input id="fon" name="phone" type="tel" class="form-control" required>
+            
+        </div>
+        <div class="form-group">
+		  <label for="message" id="font">Message</label>
+            <textarea id="font" name="message" class="form-control" style="height: 150px" required></textarea>
+            
+        </div>
+        <div class="form-group" >
+            <button type="submit" class="btn btn-primary" id="font">Submit</button>
+        </div>
+		</div>
+        </form>
+    </div>
+
+
+{% endblock	%}

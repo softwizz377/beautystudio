@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+<div class="row text center" id="faqs">
+<div class="col-md-12">
+<h3 class="head">Frequently Asked Questions</h3>
+</div>
+</div>
+<h2 id="QAS">QUESTIONS ANSWER</h2>
+<div class="panel-group" id="accordion">
+{% for FAQs in object_list %}
+
+<div class=" panel panel-default">
+ <div class="panel-heading">
+   <h4 class="panel-title">
+    <a data-toggle="collapse" data-parent="#accordion" href="#collapse{{ FAQs.id }}">
+    <p id="font">Questions:{{ FAQs.question }}</p></a>
+</h4>
+</div>
+<div id="collapse{{ FAQs.id }}" class="panel-collapse collapse">
+<div class="panel-body"><p id="font">Answer:{{ FAQs.answer }}</p></div>
+</div>
+</div>
+
+{% endfor%}
+</div>
+
+{% endblock %}

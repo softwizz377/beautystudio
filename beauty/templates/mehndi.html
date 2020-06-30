@@ -1,0 +1,99 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+
+<div class="row text center" id="mehndi">
+<div class="col-md-12">
+<h3 id="image">MEHNDI</h3>
+</div>
+</div>
+<div class="row" id="morel">
+<h3 class="mehndipack" id="flip"> MEHNDI PACKAGES</h3>
+<p id="font">Mehndi is an important part of indian culture.Beauty studio  provide all types mehndi  Design 
+like Indian, Pakistan  and Arabic Mehndi design</p>
+ <div class="col-md-4">
+   <div class="flip-box">  
+     <div class="flip-box-inner">  
+	   <div class="flip-box-front"> 
+	     <img src="{% static 'bmm.jpg' %}" height="300" width="100%" />
+	    </div>
+		  <div class="flip-box-back"> 
+	        <img src="{% static 'mehndi.jpg' %}" height="300" width="100%"/>
+	      </div>
+	    </div>
+		<h3 class="head"> Bridal Mehndi</h3>
+		<p id="font">Bridal mehndi starter pack rupees 2000 according to design. Bridal Mehndi 
+		traditions all over the world Indian weddings are incomplete without the mehndi</p>
+	</div>
+</div>
+
+<div class="col-md-4">
+   <div class="flip-box">  
+     <div class="flip-box-inner">  
+	   <div class="flip-box-front"> 
+	     <img src="{% static 'sm2.jpg' %}" height="300" width="100%" />
+	    </div>
+		  <div class="flip-box-back"> 
+	        <img src="{% static 'sm1.jpg' %}" height="300" width="100%"/>
+	      </div>
+	    </div>
+		<h3 class="head">Simple Design</h3>
+		<p id="font"> Simple Mehndi Design starter pack rupees 100 one hand to simple design.The 
+		art of mehndi is referred to as henna or kaveri mehndi. </p>
+	</div>
+</div>
+
+<div class="col-md-4">
+   <div class="flip-box">  
+     <div class="flip-box-inner">  
+	   <div class="flip-box-front"> 
+	     <img src="{% static 'am1.jpg' %}" height="300" width="100%" />
+	    </div>
+		  <div class="flip-box-back"> 
+	        <img src="{% static 'am2.jpg' %}" height="300" width="100%" />
+	      </div>
+	    </div>
+		 <h3 class="head">Arabic Mehndi</h3>
+		 <p id="font"> Arabic Mehndi Design simple Design is 200 hundered one hand and heavy design is 
+		 starter pack 2500 thousand both hand according to design is This mehndi design is vastly 
+		 different than its Indian counterpart.</p>
+	</div>
+</div>
+</div>
+
+<div class="row" id="pak">
+ <div class="col-md-6">
+ <div class="flip-box">  
+     <div class="flip-box-inner">  
+	   <div class="flip-box-front"> 
+	     <img src="{% static 'pak.jpg' %}" height="300" width="150%" />
+	    </div>
+		  <div class="flip-box-back"> 
+	        <img src="{% static 'pak1.jpg' %}" height="300" width="150%" />
+	      </div>
+	  </div>
+</div>
+  </div>
+<div class="col-md-6">
+<br>
+<br>
+	<h3 class="head">Pakistan Mehndi Design</h3>
+		 <p id="four">Pakistan mehndi starter pack rupees 100 according to design Coming from the same region 
+		 there are many similarties between the Indian and Pakistan Mehndi Design.</p>
+		 <li><a href="/appointment"><button class="button" id="butt"> Make Appointment</button></a></li>
+</div>
+</div>
+<br>
+<div class="row">
+<ul class="pagination">
+  <li class="head"><a href="natural">1</a></li>
+  <li class="head"><a href="mehndi">2</a></li>
+  <li class="head"><a href="hair">3</a></li>
+  <li class="head"><a href="pedicure">4</a></li>
+  <li class="head"><a href="bridal">5</a></li>
+</ul>
+</div>
+
+
+{% endblock %}

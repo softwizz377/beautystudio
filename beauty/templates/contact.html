@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+<div class="row text center" id="parm">
+<div class="col-md-12">
+<h3 id="contact">Contacts</h3>
+</div>
+</div>
+
+
+<div class="row " id="exe">
+<div class="col-md-12">
+<h4 id="italic">Experience the Art of Caring</h4>
+</div>
+<div class="col-md-12">
+<h3 class="head" >BEAUTY STUDIO SERVICES</h3>
+<p id="font">Questions? Comments? We’d love to hear your feedback about Lemon Spa! Please fill out the 
+fields below and help us.</p>
+</div>
+</div>
+<br>
+<br>
+<div class="row">
+<div class="col-md-4">
+<img src="{% static 'h3.jpg' %}"  height="800" width="100%">
+</div>
+<div class="col-md-offset-1 col-md-6 col-md-offset-1">
+  <form action="/insertcontact" method="post">
+{% csrf_token %}
+
+    <label for="fname" id="font">First Name</label>
+    <input type="text" id="fon" name="firstname" placeholder="Your name.."><br>
+
+    <label for="lname" id="font">Last Name</label>
+    <input type="text" id="fon" name="lastname" placeholder="Your last name.."><br>
+	
+	<label for="pno" id="font">Phoneno</label>
+    <input type="text" id="fon" name="phone"   pattern="[6|7|8|9][0-9]{9}" required placeholder="enter your number..." /><br>
+
+    <label for="country" id="font">City</label>
+	 <input type="text" id="fon" name="city" placeholder="Your last name.."><br>
+   <!-- <select id="country" id="fon" name="city">
+      <option value="Bathinda">Bathinda</option>
+      <option value="Moga">Moga</option>
+     
+    </select><br>!-->
+
+    <label for="subject" id="font">Subject</label>
+    <textarea id="fon" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+<br>
+<br>
+<br>
+    <input type="submit" value="Submit" id="font">
+
+  </form>
+</div>
+</div>
+
+
+
+{% endblock %}

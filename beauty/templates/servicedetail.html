@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+
+<div class="row text center" id="seee">
+<div class="col-md-12">
+<h3 class="head">SERVICES Details</h3>
+</div>
+</div>
+
+<br>
+<div class="row text-center" id="view">
+<div class="col-md-12">
+<h4 id="italic">Experience the Art of Caring</h4>
+</div>
+<div class="col-md-12">
+<h3 class="head" >BEAUTY STUDIO SERVICES</h3>
+</div>
+</div> 
+<div class="row" id="morel">
+{% for cat in serv %}
+
+ <div class="col-md-4 servicescategory">
+   <div class="flip-box">  
+     <div class="flip-box-inner">  
+	   <div class="flip-box-front"> 
+	     <img src="/media/{{ cat.image }}" height="400" width="100%" />
+	    </div>
+		  <div class="flip-box-back"> 
+	        <img src="/media/{{ cat.image }}" height="400" width="100%"/>
+	      </div>
+	    </div>
+		</div>
+	</div>	
+	<div class="col-md-8 servicescategory">
+	<br>
+	<br>
+	<br>
+		<h3 class="head"  >{{ cat.name }}</h3>
+		<p id="font">{{ cat.discription }}</p>
+		<p id="four">Rs.{{ cat.price }}</p>
+	
+
+	</div>
+	
+{% endfor %}
+</div>
+<div class="row text center" id="serviceback">
+</div>
+
+{% endblock	%}

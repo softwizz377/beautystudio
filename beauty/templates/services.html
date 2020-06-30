@@ -1,0 +1,219 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+
+<div class="row text center" id="see">
+<div class="col-md-12">
+<h3 class="head">SERVICES</h3>
+</div>
+</div>
+
+<br>
+<div class="row text-center" id="view">
+<div class="col-md-12">
+<h4 id="italic">Experience the Art of Caring</h4>
+</div>
+<div class="col-md-12">
+<h3 class="head" >BEAUTY STUDIO SERVICES</h3>
+</div>
+</div> 
+<div class="row" id="morel">
+{% for cat in object_list %}
+ <a href="/servicedetail/{{ cat.id }}"><div class="col-md-4 servicescategory">
+   <div class="flip-box">  
+     <div class="flip-box-inner">  
+	   <div class="flip-box-front"> 
+	     <img src="/media/{{ cat.image }}" height="300" width="100%" />
+	    </div>
+		  <div class="flip-box-back"> 
+	        <img src="/media/{{ cat.image }}" height="300" width="100%" />
+	      </div>
+	    </div>
+		    <h3 id="printed">{{ cat.name }}</h3>
+		<br>
+	</div>
+	<br>
+	<br>
+	<div class="col-md-8">
+<li id="fon"><a href="servicedetail/1" ><button id="button1" >View Detail</button></a></li>
+</div>
+</div></a>
+
+{% endfor %}
+</div>
+<!--<div class="col-md-4">
+   <div class="flip-box">  
+     <div class="flip-box-inner">  
+	   <div class="flip-box-front"> 
+	     <img src="{% static 'meh.jpg' %}" height="300" width="100%" class="img-circle"/>
+	    </div>
+		  <div class="flip-box-back"> 
+	        <img src="{% static 'mehndi.jpg' %}" height="300" width="100%" class="img-circle"/>
+	      </div>
+	    </div>
+		 <h3 id="printed">Mehndi Services</h3>
+	</div>
+</div>
+
+<div class="col-md-4">
+   <div class="flip-box">  
+     <div class="flip-box-inner">  
+	   <div class="flip-box-front"> 
+	     <img src="{% static 'h1.jpg' %}" height="300" width="100%" class="img-circle"/>
+	    </div>
+		  <div class="flip-box-back"> 
+	        <img src="{% static 'h3.jpg' %}" height="300" width="100%" class="img-circle"/>
+	      </div>
+	    </div>
+		 <h3 id="printed">Hair</h3>
+	</div>
+</div>
+</div>
+<div class="row" id="morel">
+ <div class="col-md-4">
+   <div class="flip-box">  
+     <div class="flip-box-inner">  
+	   <div class="flip-box-front"> 
+	     <img src="{% static 'pm1.jpg' %}" height="300" width="100%"  class="img-circle"/>
+	    </div>
+		  <div class="flip-box-back"> 
+	        <img src="{% static 'pm5.jpg' %}" height="300" width="100%" class="img-circle"/>
+	      </div>
+	    </div>
+		 <h3 id="printed">Pedicure & Medicure</h3>
+	</div>
+</div>
+
+<div class="col-md-4">
+   <div class="flip-box">  
+     <div class="flip-box-inner">  
+	   <div class="flip-box-front"> 
+	     <img src="{% static 'bm2.jpg' %}" height="300" width="100%" class="img-circle"/>
+	    </div>
+		  <div class="flip-box-back"> 
+	        <img src="{% static 'bm4.jpg' %}" height="300" width="100%" class="img-circle"/>
+	      </div>
+	    </div>
+		 <h3 id="printed">Bridal Makeup</h3>
+	</div>
+</div>
+
+<div class="col-md-4">
+   <div class="flip-box">  
+     <div class="flip-box-inner">  
+	   <div class="flip-box-front"> 
+	     <img src="{% static 'stu.jpg' %}" height="300" width="100%" class="img-circle"/>
+	    </div>
+		  <div class="flip-box-back"> 
+	        <img src="{% static 'm.jpg' %}" height="300" width="100%" class="img-circle"/>
+	      </div>
+	    </div>
+		 <h3 id="printed">Party Makeup</h3>
+	</div>
+</div>-->
+</div>
+
+<div class="row text-center" id="pack">
+<div class="col-md-12">
+<h3 class="head" >BEAUTY STUDIO PACKAGES</h3>
+</div>
+<br>
+<br>
+<div class="col-md-4">
+    <div class="hovereffect">
+        <img  src="{% static 'ssp.jpg' %}" height="400" width="100%" alt="">
+            <div class="overlay">
+                <h2>300</h2>
+				<p>One Month Basic</p>
+            </div>
+        </div>
+	</div>
+<div class="col-md-4">
+    <div class="hovereffect">
+        <img  src="{% static 'ps.jpg' %}" height="400" width="100%" alt="">
+            <div class="overlay">
+                <h2>600</h2>
+				<p>Three Month Premium</p>
+            </div>
+    </div>
+</div>
+<div class="col-md-4">
+    <div class="hovereffect">
+        <img  src="{% static 'servvice.png' %}" height="400" width="100%"alt="">
+            <div class="overlay">
+                <h2>1000</h2>
+				<p>Six Month Premium</p>
+            </div>
+    </div>
+</div> 
+</div>
+<div class="row text center">
+<div class="col-md-4">
+        <div class="card mb-5 mb-lg-0">
+          <div class="card-body">
+            <hr>
+            <ul class="fa-ul">
+              <li id="font"><span class="fa-li"><i class="fas fa-check"></i><i class="glyphicon glyphicon-ok workicon" id="ok"></i></span>Starter Pack Included</li>
+              <li id="font"><span class="fa-li"><i class="fas fa-check"></i><i class="glyphicon glyphicon-ok workicon" id="ok"></i></span>Personal Trainer</li>
+              <li id="font"><span class="fa-li"><i class="fas fa-check"></i><i class="glyphicon glyphicon-ok workicon" id="ok"></i></span>Special Class</li>
+              <li id="font"><span class="fa-li"><i class="fas fa-check"></i><i class="glyphicon glyphicon-remove workicon" id="remove"></i></span>Group Training</li>
+              <li  id="font" class="text-muted"><span class="fa-li"><i class="fas fa-times"></i><i class="glyphicon glyphicon-ok workicon" id="ok"></i></span>Ayurvedic Medicine</li>
+            </ul>
+            </div>
+        </div>
+      </div>
+<div class="col-md-4">
+        <div class="card mb-5 mb-lg-0">
+          <div class="card-body">
+            <hr>
+            <ul class="fa-ul">
+              <li id="font"><span class="fa-li"><i class="fas fa-check"></i><i class="glyphicon glyphicon-ok workicon" id="ok"></i></span>Starter Pack Included</li>
+              <li id="font"><span class="fa-li"><i class="fas fa-check"></i><i class="glyphicon glyphicon-ok workicon" id="ok"></i></span>Personal Trainer</li>
+              <li id="font"><span class="fa-li"><i class="fas fa-check"></i><i class="glyphicon glyphicon-ok workicon" id="ok"></i></span>Special Class</li>
+              <li id="font"><span class="fa-li"><i class="fas fa-check"></i><i class="glyphicon glyphicon-remove workicon" id="remove"></i></span>Group Training</li>
+              <li id="font" class="text-muted"><span class="fa-li"><i class="fas fa-times"></i><i class="glyphicon glyphicon-ok workicon" id="ok"></i></span>Ayurvedic Medicine</li>
+               </ul>
+           
+          </div>
+        </div>
+      </div>
+<div class="col-md-4">
+        <div class="card mb-5 mb-lg-0">
+          <div class="card-body">
+            <hr>
+            <ul class="fa-ul">
+              <li id="font"><span class="fa-li"><i class="fas fa-check"></i><i class="glyphicon glyphicon-ok workicon" id="ok"></i></span>Starter Pack Included</li>
+              <li id="font"><span class="fa-li"><i class="fas fa-check"></i><i class="glyphicon glyphicon-ok workicon" id="ok"></i></span>Personal Trainer</li>
+              <li id="font"><span class="fa-li"><i class="fas fa-check"></i><i class="glyphicon glyphicon-ok workicon" id="ok"></i></span>Special Class</li>
+              <li id="font"><span class="fa-li"><i class="fas fa-check"></i><i class="glyphicon glyphicon-ok workicon" id="ok"></i></span>Group Training</li>
+              <li id="font" class="text-muted"><span class="fa-li"><i class="fas fa-times"></i><i class="glyphicon glyphicon-ok workicon" id="ok"></i></span>Ayurvedic Medicine</li>
+              </ul>
+            
+          </div>
+        </div>
+      </div>
+<div class="col-md-4">
+<li><a href="/appointment"><button id="button">Appointment</button></a></li>
+</div>
+<div class="col-md-4">
+<li><a href="/appointment"><button id="button">Appointment</button></a></li>
+</div>
+<div class="col-md-4">
+<li><a href="/appointment"><button id="button" >Appointment</button></a></li>
+</div>
+</div>
+
+<br>
+<div class="row">
+<ul class="pagination">
+  <li class="head"><a href="natural">1</a></li>
+  <li class="head"><a href="mehndi">2</a></li>
+  <li class="head"><a href="hair">3</a></li>
+  <li class="head"><a href="pedicure">4</a></li>
+  <li class="head"><a href="bridal">5</a></li>
+</ul>
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+<div class="row" id="bback">
+<div class="col-md-12">
+<p class="gor">YOUR IMAGE<BR>
+CONSULTANTS FOR THAT</p>
+<h3 id="image">GORGEOUS<br>
+LOOK!</h3>
+</div>
+</div>
+<br>
+<div class="row" id="package">
+<div class="col-md-3">
+<img src="{% static 'br2.jpg' %}" height="500px" width="100%"/>
+</div>
+<div class="col-md-6">
+<h3 class="head">BRIDAL PACKAGES</h3>
+<p id="font">Your fairy tale wedding is now a reality! Naturals helps transform brides-to-be into beautiful 
+princesses on their special day.Our wedding makeup artists and hairstylists create unique looks by 
+blending international trends and traditional styles. This has inspired our 3 key bridal styles – 
+the classic South Indian bride, the Bollywood inspired North Indian bride and the elegant Christian
+bride.Our bridal packages range from a one day miracle package to a 3 month luxury package, which 
+includes facials, body massage, under eye treatment, skin lightening procedures and much more. 
+Naturals also offers wedding packages for grooms.</p>
+</div>
+<div class="col-md-3">
+<img src="{% static 'brb.jpg' %}" height="500px" width="100%"/>
+</div>
+</div>
+<br>
+<div class="row" id="bservice">
+<h3 class="head">BRIDAL SERVICES</h3>
+<div class="col-md-6">
+<img src="{% static 'bh1.jpg' %}" height="400px" width="100%"/>
+</div>
+<div class="col-md-6">
+<h4 class="head">BRIDAL HAIRSTYLE</h4>
+<p id="font">Long or short, curly or straight, frizzy or silky, no matter what type of hair you have, you can
+trust Naturals to style it to perfection.<br>
+From cuts and colours to hair spa and other treatments, our hair experts are skilled at crafting a 
+look that suits you without damaging your hair. Our experts create bridal hairstyles that are a mix
+ of trend and tradition, ensuring that every bride is picture perfect!</p>
+</div>
+</div>
+<div class="row">
+ <div class="column" id="layout">
+  <img src="{% static 'bh1.jpg' %}" height="300" width="100%"/>
+  <p id="four">BRIDAL HAIRSTYLE</p>
+</div>
+<div class="column" id="layout">
+  <img src="{% static 'bm2.jpg' %}" height="300" width="100%"/>
+  <P id="four">BRIDAL MAKEUP</P>
+</div>
+<div class="column" id="layout">
+  <img src="{% static 'bbr.jpg' %}" height="300" width="100%"/>
+  <P id="four">BRIDAL DRESSUP</P>
+</div>
+</div>
+ <br>
+<div class="row" id="butt">
+<div class="col-md-12">
+<li><a href="/appointment"><button class="button"> Make Appointment</button></a></li>
+</div>
+</div>
+<br>
+
+<div class="row">
+<ul class="pagination">
+  <li class="head"><a href="natural">1</a></li>
+  <li class="head"><a href="mehndi">2</a></li>
+  <li class="head"><a href="hair">3</a></li>
+  <li class="head"><a href="pedicure">4</a></li>
+  <li class="head"><a href="bridal">5</a></li>
+</ul>
+</div>
+
+
+
+{% endblock %}

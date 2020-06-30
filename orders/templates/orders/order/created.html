@@ -1,0 +1,133 @@
+
+{% load static %}
+<html>
+<head>
+<meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<title> Beauty Studio</title>
+
+<link href="{% static 'bootstrap/css/bootstrap.min.css' %}" type="text/css" rel="stylesheet"/>
+<link href="{% static 'bootstrap/css/bootstrap-theme.min.css' %}" type="text/css" rel="stylesheet"/>
+<link href="{% static 'style1.css' %}" type="text/css" rel="stylesheet"/>
+<!--.item img{ height:500px !important; width:600%}
+scarousel-caption h3{ background:rgba(0,0,0,0.5); padding:20px;}
+.carousel-control.left{ background-image:none !important;} !-->
+
+<script src="{% static 'bootstrap/jquery.js' %}"></script>
+<script src="{% static 'bootstrap/bootstrap.js' %}"></script>
+
+</head>
+<body>
+<div class="container-fluid">
+<div class="row" id="app">
+<div class="col-md-10">
+<nav class="navbar-inverse" id="nav">
+<ul class="nav navbar-nav">
+<li><a href="/feedback" id="hov"><span class="glyphicon glyphicon-bell"></span>Feedback</a></li>
+<li><a href="/appointment" id="hov"><span class="glyphicon glyphicon-bell"></span> Make a Appointment</a></li>
+</ul>
+</nav>
+</div>
+<div class="col-md-2">
+<nav class="navbar-inverse" id="nav">
+<ul class="nav navbar-nav">
+<li><a href="/career" id="hov" ><span class="glyphicon glyphicon-user"></span> Career</a></li>
+
+</ul>
+</nav>
+</div>
+<div class="col-md-12">
+<h1 id="app" class="wel"> Welcome To Beauty Studio</h1>
+</div>
+</div>
+
+
+
+<div class="row" id="header">
+<div class="col-md-4">
+<img src="{% static 'be.jpg' %}" height="70" width="200"/>
+</div>
+<div class="col-md-8">
+<nav class="navbar-inverse" id="nav">
+<ul class="nav navbar-nav">
+<li><a href="/home" id="hove">Home</a></li>
+<li><a href="/about" id="hove">About</a></li>
+<li><a href="/services" id="hove">Services</a></li>
+<li><a href="/gallery" id="hove">Gallery</a></li>
+<li><a href="/blog" id="hove">Blog</a></li>
+<li><a href="/Product" id="hove">Products</a></li>
+<li><a href="/offers" id="hove">Offers</a></li>
+<li><a href="/contact" id="hove">Contact Us</a></li>
+<li><a href="/FAQs" id="hove">FAQs</a></li>
+</ul>
+</nav>
+</div>
+</div>
+{% load static %}
+{% block title %}
+    Your Shopping Cart| Thank you
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row" style="margin-top: 6%">
+            <div class="col-md-8 col-md-offset-2">
+                <h3 class="page-header" style="font-size:45px;"><b>Thank You For Shopping With Us</b>
+                </h3>
+                <p id="font">Your order has been successfully completed. Your order number is <strong>{{ order.id }}</strong>.</p>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+<div class="row" id="footer">
+
+<div class="col-md-4">
+<h3 class="head">Navigation</h3>
+<div class="col-md-6">
+<ul class="nav">
+<li><a href="home" id="navi">Home</a></li>
+<li><a href="about" id="navi">About</a></li>
+<li><a href="services" id="navi">Services</a></li>
+<li><a href="gallery" id="navi">Gallery</a></li>
+</ul>
+</div>
+<div class="col-md-6">
+<ul class="nav">
+<li><a href="blog" id="navi">Blog</a></li>
+<li><a href="Product" id="navi">Product</a></li>
+<li><a href="offers" id="navi">Offers</a></li>
+<li><a href="contact" id="navi">Contacts</a></li>
+<li><a href="FAQs" id="navi">FAQs</a></li>
+</ul>
+</div>
+</div>
+<div class="col-md-4">
+<h3 class="head"> Specials</h3>
+<h4 id="font">Facials</h4>
+<h4 id="font">Bridal Make-up</h4>
+<h4 id="font">Hair Care</h4>
+<h4 id="font">Skin Care</h4>
+<h4 id="font">Mehndi Service</h4>
+<h4 id="font">Pedicure & Medicure</h4>
+</div>
+<div class="col-md-4">
+<h3 class="head"> Timing</h3>
+<h4 id="font"><b>Opening</b></h4>
+<p id="font">Morning 9 O'clock</p>
+<h4 id="font"><b>Closing</b></h4>
+<p id="font">Evening 8 O'clock</p>
+<h3 class="head">Sunday :Closed</h3>
+</div>
+</ul>
+</nav>
+</div>
+<div class="row" id="foot">
+<div class="col-md-12">
+<h3 id="fours">copyright@2020 All rights Beauty Studio</h3>
+</div>
+</div>
+
+ </body>
+</html>

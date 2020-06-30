@@ -1,0 +1,99 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+<div class="row" id="hairstyle">
+<div class="col-md-12">
+<h3 class="stunning">HAIR SERVICES</h3>
+<p id="lux">STUNNING CUTS, VIBRANT COLOURS AND LUXURY HAIR TREATMENTS</p>
+</div>
+</div>
+<br>
+<br>
+<div class="row" id="style">
+<div class="col-md-6">
+<img src="{% static 'hs.jpg' %}" height="400px" width="100%"/>
+</div>
+<div class="col-md-6">
+<h3 class="head">STYLING</h3>
+<p id="font">Haircuts, if done well, can accentuate the best features of your face. A haircut by a 
+Naturals hair stylist is no ordinary one. Our hairdressers are skilled in sculpting a look that not
+only defines your face, but also adds movement and volume.At Naturals you can trust our hairstylists
+to give you the latest hairstyle, while keeping in mind your preferences. New hair styles also come 
+with a relaxing hair wash and conditioning, giving your hair a natural shine.</p>
+<p id="glow">Haircuts are not merely new hairstyles, but a new you!</p>
+</div>
+</div>
+<div class="row"  id="col" id="style">
+<div class="col-md-6">
+<h3 class="head">COLOURING</h3>
+<p id="font">Whether you’re covering up greys or you just love to experiment, hair coloring is the simplest 
+way to reinvent your look.At Naturals, we only use high-end, ammonia free hair color for all our 
+hair coloring services, which include root touch up, global colouring, streaking, block colouring 
+and creative colouring. Our hair experts can transform you from Plain Jane to Sexy Suzy with just 
+a few streaks of our ammonia free hair color.</p>
+<p id="glow">Reinvent yourself by experimenting with colours at Naturals!</p>
+</div>
+<div class="col-md-6">
+<img src="{% static 'haco.jpg' %}" height="400px" width="100%"/>
+</div>
+</div>
+<div class="row" id="style">
+<div class="col-md-6">
+<img src="{% static 'hsp.png' %}" height="400px" width="100%"/>
+</div>
+<div class="col-md-6">
+<h3 class="head">SPA</h3>
+<p id="font">There is nothing more relaxing than a good hair spa treatment. At Naturals, we pamper every 
+strand of your hair thanks to the gifted, gentle hands of our hair care professionals. Hair spa 
+is a healthy indulgence that exfoliates your hair, stimulates your scalp and promotes hair growth.
+A hair spa treatment is the best solution for dry, frizzy hair. It also relaxes your body and 
+relieves stress. That’s the best part about hair spa!</p>
+</div>
+</div>
+<div class="row" id="style">
+<div class="col-md-6">
+<h3 class="head">STRAIGHTENING</h3>
+<p id="font">Ever wish you had straight, silky hair like your favourite actress? Your wish is our command! 
+Naturals is a hair straightening genie that can transform even the tightest curls into silky 
+straight hair with our hair smoothening treatment.Our hair stylists will ensure you get a 
+damage-free hair straightening treatment because at Naturals we only use safe and internationally 
+tested brands such as Wella, Schwarzkopf and L’Oreal. So opt for our hair smoothening service and 
+keep your hair and yourself worry-free.</p>
+</div>
+<div class="col-md-6">
+<img src="{% static 'hst.jpg' %}" height="400px" width="100%"/>
+</div>
+</div>
+
+
+<div class="row" id="col" id="style">
+<div class="col-md-6">
+<img src="{% static 'hh1.jpg' %}" height="400px" width="100%"/>
+</div>
+<div class="col-md-6">
+<h3 class="head">HIGHLIGHTS</h3>
+<p id="font">Highlights are one of the biggest trends in the hair colour technology. Highlights will give 
+your hair the depth & dimension that you are looking for. We, at Naturals understand the importance
+ of healthy hair and thus take utmost care while choosing the right colour for your hair. We will 
+ help you choose the best colour to suit your complexion, face shape, and overall persona</p>
+</div>
+</div>
+<br>
+<div class="row" id="butt">
+<div class="col-md-12">
+<li><a href="/appointment"><button class="button"> Make Appointment</button></a></li>
+</div>
+</div>
+<br>
+
+<div class="row">
+<ul class="pagination">
+  <li class="head"><a href="natural">1</a></li>
+  <li class="head"><a href="mehndi">2</a></li>
+  <li class="head"><a href="hair">3</a></li>
+  <li class="head"><a href="pedicure">4</a></li>
+  <li class="head"><a href="bridal">5</a></li>
+</ul>
+</div>
+{% endblock %}

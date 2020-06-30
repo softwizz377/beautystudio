@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+<div class="row" id="pedicure">
+<div class="col-md-12">
+<h3 class="head">MANICURE & PEDICURE</h3>
+</div>
+</div>
+
+<div class="row" id="style">
+<div class="col-md-6">
+<img src="{% static 'hand.webp' %}" height="500px" width="100%"/>
+</div>
+<div class="col-md-6">
+<h3 class="head">MANICURE</h3>
+<p id="font">Naturals offer 3 special manicures – Spa Manicure, Radiant Manicure and Intense 
+Moisturizing Manicure.The Spa Manicure is an herbal manicure that uses only organic products. 
+This manicure helps you de-stress by releasing the tension from your nerves.The Radiant Manicure 
+is an excellent way to whiten dull or tanned skin. Get rid of uneven tanned skin with this special
+manicure.The Intense Moisturizing Manicure is recommended for dry hands. Soak your hands in a 
+special moisturizing mixture of soft, beautiful hands.Naturals also offers various other add-on 
+packages like a paraffin pack that promotes blood flow, relaxes your muscles and improves skin 
+elasticity. We also offer nail arts. Our talented nail care experts can give you a classy French 
+polish or a trendy nail art.</p>
+</div>
+</div>
+<br>
+<div class="row" id="col" id="style">
+<div class="col-md-6">
+<h3 class="head">PEDICURE</h3>
+<p id="font">A pedicure is so much more than a cut and file for your nails. It releases the tension
+from your feet, relieving stress from your entire body.At Naturals, we specialize in 3 types of 
+pedicure –Radiant Pedicure, Intense Moisturizing Pedicure and Spa Pedicure.The Radiant Pedicure is
+best suited for tanned feet. It lightens tans and blemishes, making your feet beautiful.The Intense 
+Moisturizing Pedicure is recommended for dry feet.Soak your feet in a specially designed moisturizing
+mixture and watch the dryness disappear!The Spa Pedicure is an all-natural pedicure that uses 
+organic products, which helps soothe your nerves that leaves you feeling completely relaxed.</p>
+</div>
+<div class="col-md-6">
+<img src="{% static 'foot3.jpg' %}" height="400px" width="100%"/>
+</div>
+</div>
+
+<div class="row" id="refl">
+<div class="col-md-6">
+<img src="{% static 'mass.jpg' %}" height="400px" width="100%"/>
+</div>
+<div class="col-md-6">
+<h3 class="head">REFLEXOLOGY</h3>
+<p id="font">At Naturals, we believe that to be beautiful outside, you should start from the core.Reflexology
+ helps keep you healthy from within, which reflects on your skin.Our Reflexologists apply pressure 
+ to your feet and hands using specific techniques without applying oil or lotion. This treatment 
+ leaves you feeling refreshed and energized!</p>
+</div>
+</div>
+
+
+
+<br>
+<div class="row" id="butt">
+<div class="col-md-12">
+<li><a href="/appointment"><button class="button"> Make Appointment</button></a></li>
+</div>
+</div>
+<br>
+
+<div class="row">
+<ul class="pagination">
+  <li class="head"><a href="natural">1</a></li>
+  <li class="head"><a href="mehndi">2</a></li>
+  <li class="head"><a href="hair">3</a></li>
+  <li class="head"><a href="PedMed">4</a></li>
+  <li class="head"><a href="bridal">5</a></li>
+</ul>
+</div>
+{% endblock %}

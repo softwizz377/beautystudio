@@ -1,0 +1,523 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+    
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+	<script src="{% static 'product.slider.standard/js/jssor.slider-28.0.0.min.js' %}" type="text/javascript"></script>
+    <script type="text/javascript">
+        window.jssor_1_slider_init = function() {
+
+            var jssor_1_SlideoTransitions = [
+              [{b:-1,d:1,kX:16}],
+              [{b:-1,d:1,y:200,rY:-360,sX:0.5,sY:0.5,p:{y:{o:32,d:1,dO:9},rY:{c:0}}},{b:0,d:3000,y:0,o:1,rY:0,sX:1,sY:1,e:{y:1,o:13,rY:1,sX:1,sY:1},p:{y:{dl:0},o:{dl:0.1,rd:3},rY:{dl:0.1,o:33},sX:{dl:0.1,o:33},sY:{dl:0.1,o:33}}}],
+              [{b:-1,d:1,y:200,rY:-360,sX:0.5,sY:0.5,p:{y:{o:32,d:1,dO:9},rY:{c:0}}},{b:0,d:3000,y:0,o:1,rY:0,sX:1,sY:1,e:{y:1,o:13,rY:1,sX:1,sY:1},p:{y:{dl:0},o:{dl:0.1,rd:3},rY:{dl:0.1,o:33},sX:{dl:0.1,o:33},sY:{dl:0.1,o:33}}}],
+              [{b:-1,d:1,y:100,rY:-360,sX:0.5,sY:0.5,p:{y:{o:32,d:1,dO:9},rY:{c:0}}},{b:0,d:3000,y:0,o:1,rY:0,sX:1,sY:1,e:{y:1,o:13,rY:1,sX:1,sY:1},p:{y:{dl:0},o:{dl:0.02,rd:3},rY:{dl:0.02,o:33},sX:{dl:0.02,o:33},sY:{dl:0.02,o:33}}}],
+              [{b:2000,d:1000,y:50,e:{y:3}}],
+              [{b:-1,d:1,bl:[8]},{b:2000,d:1000,bl:[3],e:{bl:3}}],
+              [{b:-1,d:1,rp:1},{b:2000,d:1000,o:0.6},{b:2000,d:1000,rp:0}],
+              [{b:-1,d:1,sX:0.7}],
+              [{b:1000,d:2000,y:195,e:{y:3}}],
+              [{b:600,d:2000,y:195,e:{y:3}}],
+              [{b:1400,d:2000,y:195,e:{y:3}}],
+              [{b:-1,d:1,sX:0.7,ls:2},{b:0,d:800,o:1,ls:0,e:{ls:6}}],
+              [{b:-1,d:801,rp:1}],
+              [{b:-1,d:1,kY:-6}],
+              [{b:-1,d:1,x:30,kY:-10},{b:1400,d:1500,x:0,o:1,e:{x:27,o:6}}],
+              [{b:-1,d:1,c:{t:0}},{b:1400,d:1500,c:{t:339},e:{c:{t:3}}}],
+              [{b:-1,d:1,x:30,kY:-10},{b:1700,d:1500,x:0,o:1,e:{x:27,o:6}}],
+              [{b:-1,d:1,c:{t:0}},{b:1700,d:1500,c:{t:339},e:{c:{t:3}}}],
+              [{b:-1,d:1,sX:0.3,sY:0.3},{b:400,d:1000,o:1,sX:1,sY:1,e:{sX:3,sY:3}}],
+              [{b:-1,d:1,sX:0.3,sY:0.3},{b:0,d:1800,x:-347,y:-94,o:1,sX:1,sY:1,e:{x:3,y:3,sX:3,sY:3}}],
+              [{b:-1,d:1,sX:0.3,sY:0.3},{b:180,d:1520,x:-230,y:-217,o:1,sX:1,sY:1,e:{x:3,y:3,sX:3,sY:3}}],
+              [{b:-1,d:1,sX:0.3,sY:0.3},{b:400,d:1500,x:-120,y:-179,o:1,sX:1,sY:1,e:{x:3,y:3,sX:3,sY:3}}],
+              [{b:-1,d:1,sX:0.3,sY:0.3},{b:500,d:1600,x:120,y:-167,o:1,sX:1,sY:1,e:{x:3,y:3,sX:3,sY:3}}],
+              [{b:-1,d:1,sX:0.3,sY:0.3},{b:800,d:800,x:301,y:-100,o:1,sX:1,sY:1,e:{x:3,y:3,sX:3,sY:3}}],
+              [{b:-1,d:1,sX:0.3,sY:0.3},{b:600,d:1000,x:312,y:-92,o:1,sX:1,sY:1,e:{x:3,y:3,sX:3,sY:3}}],
+              [{b:-1,d:1,sX:0.3,sY:0.3},{b:100,d:800,x:388,y:-161,o:1,sX:1,sY:1,e:{x:3,y:3,sX:3,sY:3}}]
+            ];
+
+            var jssor_1_options = {
+              $AutoPlay: 1,
+              $SlideDuration: 800,
+              $SlideEasing: $Jease$.$OutQuint,
+              $CaptionSliderOptions: {
+                $Class: $JssorCaptionSlideo$,
+                $Transitions: jssor_1_SlideoTransitions
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$,
+                $SpacingX: 16,
+                $SpacingY: 16
+              }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*#region responsive code begin*/
+
+            var MAX_WIDTH = 1500;
+
+            function ScaleSlider() {
+                var containerElement = jssor_1_slider.$Elmt.parentNode;
+                var containerWidth = containerElement.clientWidth;
+
+                if (containerWidth) {
+
+                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                    jssor_1_slider.$ScaleWidth(expectedWidth);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+
+            ScaleSlider();
+
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*#endregion responsive code end*/
+        };
+    </script>
+    <style>
+        /*jssor slider loading skin spin css*/
+        .jssorl-009-spin img {
+            animation-name: jssorl-009-spin;
+            animation-duration: 1.6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes jssorl-009-spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        /*jssor slider bullet skin 057 css*/
+        .jssorb057 .i {position:absolute;cursor:pointer;}
+        .jssorb057 .i .b {fill:none;stroke:#fff;stroke-width:2200;stroke-miterlimit:10;stroke-opacity:0.4;}
+        .jssorb057 .i:hover .b {stroke-opacity:.7;}
+        .jssorb057 .iav .b {stroke-opacity: 1;}
+        .jssorb057 .i.idn {opacity:.3;}
+
+        /*jssor slider arrow skin 051 css*/
+        .jssora051 {display:block;position:absolute;cursor:pointer;}
+        .jssora051 .a {fill:none;stroke:#fff;stroke-width:360;stroke-miterlimit:10;}
+        .jssora051:hover {opacity:.8;}
+        .jssora051.jssora051dn {opacity:.5;}
+        .jssora051.jssora051ds {opacity:.3;pointer-events:none;}
+    </style>
+    <svg viewbox="0 0 0 0" width="0" height="0" style="display:block;position:relative;left:0px;top:0px;">
+        <defs>
+            <filter id="jssor_1_flt_1" x="-50%" y="-50%" width="200%" height="200%">
+                <feGaussianBlur id="jssor_1_gbl_1" stddeviation="8" data-t="5"></feGaussianBlur>
+            </filter>
+            <mask id="jssor_1_msk_2">
+                <path fill="#ffffff" d="M15.3,6.8C16.4,6.4 17.5,6 18.5,5.7C27.1,2.9 39-4.1 47.1,3.3C50.4,6.3 53.4,22.2 51.3,25.6C45.9,34.5 32.6,27.4 25.1,26.1C18.9,25 10.1,32.8 4.4,28.4C-5.6,20.7 8.9,9.3 15.3,6.8Z" x="0" y="0" style="position:absolute;overflow:visible;"></path>
+            </mask>
+            <filter id="jssor_1_flt_3" x="-50%" y="-50%" width="200%" height="200%">
+                <feGaussianBlur stddeviation="2" result="r1"></feGaussianBlur>
+                <feColorMatrix in="r1" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 3 -1" result="r2"></feColorMatrix>
+            </filter>
+            <filter id="jssor_1_flt_4" x="-50%" y="-50%" width="200%" height="200%">
+                <feGaussianBlur stddeviation="10"></feGaussianBlur>
+            </filter>
+            <filter id="jssor_1_flt_5" x="-50%" y="-50%" width="200%" height="200%">
+                <feGaussianBlur stddeviation="10"></feGaussianBlur>
+            </filter>
+            <filter id="jssor_1_flt_6" x="-50%" y="-50%" width="200%" height="200%">
+                <feGaussianBlur stddeviation="10"></feGaussianBlur>
+            </filter>
+            <mask id="jssor_1_msk_8">
+                <text data-to="130px 50px" fill="#ffffff" id="jssor_1_lyr_7" text-anchor="middle" x="130" y="100" data-t="11" style="position:absolute;opacity:0;font-family:Arial,Helvetica,sans-serif;font-size:130px;font-weight:900;letter-spacing:2em;overflow:visible;">
+                </text>
+            </mask>
+            <mask id="jssor_1_msk_9">
+                <image data-load="href" width="980" height="380" x="0" y="0" style="position:absolute;max-width:980px;" href="img/makeup-mask.png"></image>
+            </mask>
+        </defs>
+    </svg>
+    <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:380px;overflow:hidden;visibility:hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
+        </div>
+        <div data-u="slides"  style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:380px;overflow:hidden;">
+            <div data-p="680">
+                <img data-u="image" data-src="{% static 'salon3.png' %}"/>
+                <div data-to="50% 50%" data-ts="flat" data-p="680" data-po="80% 50%" data-t="0" style="left:0px;top:0px;width:980px;height:380px;position:absolute;">
+                    <div data-to="50% 80%" data-ts="preserve-3d" data-arr="1" style="left:180px;top:65px;width:300px;height:48px;position:absolute;opacity:0;color:#ff0066;font-size:39px;line-height:1.2;letter-spacing:0.2em;">Professional Beauty Care For Everyone</div>
+                    <div data-to="50% 80%" data-ts="preserve-3d" data-arr="2" style="left:495px;top:165px;width:350px;height:26px;position:absolute;opacity:0;color:#ff0066;font-size:22px;line-height:1.2;letter-spacing:0.2em;text-align:center;"> </div>
+                    <div data-to="50% 80%" data-ts="preserve-3d" data-arr="3" style="left:498px;top:200px;width:400px;height:50px;position:absolute;opacity:0;color:#99958a;font-size:10px;line-height:1.2;letter-spacing:0.2em;"><div><br /></div><div><br /></div></div>
+                </div>
+            </div>
+            <div data-p="680">
+                <img data-u="image" data-src="{% static 'bbr.jpg' %}" />
+                <img data-to="50% 50%" data-t="4" style="left:595px;top:207px;width:271px;height:266px;position:absolute;max-width:271px;" src="{% static 'pro.jpg' %}" />
+                <svg viewbox="0 0 52 31" width="52" height="31" data-tchd="jssor_1_msk_2" style="left:766px;top:322px;display:block;position:absolute;overflow:visible;">
+                    <g fill="rgb(0, 0, 0)" stroke="none" stroke-width="1" mask="url(#jssor_1_msk_2)">
+                        <image data-load="href" width="63" height="20" filter="url(#jssor_1_flt_1)" x="-20" y="10" data-t="6" data-tsep="jssor_1_gbl_1" style="position:absolute;opacity:0;max-width:63px;" href="img/juce-pomegranate-bmm.jpg"></image>
+                    </g>
+                </svg>
+                <svg viewbox="0 0 350 100" data-to="50% 50%" width="350" height="100" data-t="7" style="left:72px;top:250px;display:block;position:absolute;font-family:font-family:Monotype Corsiva; font-size:30px;font-weight:900;overflow:visible;">
+                    <text fill="#6b0215" text-anchor="middle" x="175" y="100">NOW LOOK YOUR BEST AS YOU RULE THE WORLD!
+                    </text>
+                </svg>
+                <svg viewbox="0 0 260 130" data-ts="preserve-3d" width="260" height="130" data-t="12" data-tchd="jssor_1_msk_8" style="left:115px;top:100px;display:block;position:absolute;overflow:visible;">
+                    <g mask="url(#jssor_1_msk_8)">
+                        <path fill="#b10626" d="M260,0L260,130L0,130L0,0Z" x="0" y="0" style="position:absolute;overflow:visible;"></path>
+                        <svg viewbox="0 0 260 130" data-ts="preserve-3d" x="0" y="0" width="260" height="130" style="position:absolute;overflow:visible;">
+                            <g filter="url(#jssor_1_flt_3)">
+                                <image data-load="href" width="370" height="100" x="-66" y="35" style="position:absolute;max-width:370px;" href="img/fruit-splash.png"></image>
+                                <path data-to="25px -30px" filter="url(#jssor_1_flt_4)" fill="#d55a7d" d="M-5-30C-5-46.56854 8.43146-60 25-60C41.56854-60 55-46.56854 55-30C55-13.43146 41.56854,0 25,0C8.43146,0 -5-13.43146 -5-30Z" x="-5" y="-60" data-t="8" style="position:absolute;opacity:0.4;overflow:visible;"></path>
+                                <path data-to="94px -20px" filter="url(#jssor_1_flt_5)" fill="#d55a7d" d="M54-20C54-42.09139 71.90861-60 94-60C116.09139-60 134-42.09139 134-20C134,2.09139 116.09139,20 94,20C71.90861,20 54,2.09139 54-20Z" x="54" y="-60" data-t="9" style="position:absolute;opacity:0.4;overflow:visible;"></path>
+                                <path data-to="200px -10px" filter="url(#jssor_1_flt_6)" fill="#d55a7d" d="M150-10C150-37.61424 172.38576-60 200-60C227.61424-60 250-37.61424 250-10C250,17.61424 227.61424,40 200,40C172.38576,40 150,17.61424 150-10Z" x="150" y="-60" data-t="10" style="position:absolute;opacity:0.4;overflow:visible;"></path>
+                            </g>
+                        </svg>
+                    </g>
+                </svg>
+            </div>
+            <div data-p="680">
+                <img data-u="image" data-src="{% static 'back5.jpg' %}" />
+             <!--   <div data-to="50% 50%" data-ts="preserve-3d" data-t="13" style="left:505px;top:83px;width:400px;height:150px;position:absolute;mix-blend-mode:color-dodge;">
+                    <div data-to="50% 50%" data-ts="preserve-3d" data-t="15" data-arr="14" style="left:46px;top:15px;width:339px;height:40px;position:absolute;opacity:0;color:#000099;font-size:20px;line-height:2;letter-spacing:0.08em;padding:0px 0px 0px 10px;box-sizing:border-box;background-color:#ffffff;background-clip:padding-box;">Definite beauty defining you</div>
+                    <div data-to="50% 50%" data-ts="preserve-3d" data-t="17" data-arr="16" style="left:16px;top:95px;width:339px;height:40px;position:absolute;opacity:0;color:#000000;font-size:20px;line-height:2;letter-spacing:0.1em;padding:0px 0px 0px 10px;box-sizing:border-box;background-color:#ffffff;background-clip:padding-box;">Make up to a twisting trend</div>
+                </div>!-->
+				
+              <svg viewbox="0 0 980 380" data-ts="preserve-3d" width="980" height="380" style="left:0px;top:0px;display:block;position:absolute;overflow:visible;">
+                    <g>
+             <!--           <svg viewbox="0 0 980 380" data-ts="preserve-3d" x="0" y="0" width="980" height="380" data-tchd="jssor_1_msk_9" style="position:absolute;overflow:visible;">
+                            <g mask="url(#jssor_1_msk_9)">
+                                <image data-load="href" width="980" height="380" data-to="484.0px 428.0px" x="-6" y="10" data-t="18" style="position:absolute;opacity:0;max-width:980px;" href="img/makeup-fb1.jpg"></image>
+                                <image data-load="href" width="96" height="45" data-to="423px 366px" x="375" y="344" data-t="19" style="position:absolute;opacity:0;max-width:96px;" href="img/makeup-eyg1.jpg"></image>
+                                <image data-load="href" width="98" height="86" data-to="424px 387px" x="375" y="344" data-t="20" style="position:absolute;opacity:0;max-width:98px;" href="img/makeup-f2.jpg"></image>
+                                <image data-load="href" width="101" height="122" data-to="425px 381px" x="375" y="320" data-t="21" style="position:absolute;opacity:0;max-width:101px;" href="img/makeup-bbr.jpg"></image>
+                                <image data-load="href" width="52" height="77" data-to="482px 428px" x="456" y="390" data-t="22" style="position:absolute;opacity:0;max-width:52px;" href="img/makeup-bmm.jpg"></image>
+                                <image data-load="href" width="23" height="18" data-to="497px 435px" x="486" y="426" data-t="23" style="position:absolute;opacity:0;max-width:23px;" href="img/makeup-1080.jpg"></image>
+                                <image data-load="href" width="19" height="19" data-to="502px 434px" x="493" y="425" data-t="24" style="position:absolute;opacity:0;max-width:19px;" href="img/makeup-bh.jpg"></image>
+                                <image data-load="href" width="15" height="18" data-to="514px 422px" x="507" y="413" data-t="25" style="position:absolute;opacity:0;max-width:15px;" href="img/makeup-bot.jpg"></image>
+                            </g>
+                        </svg> !-->
+                    </g>
+                </svg>
+            </div>
+        </div><a data-scale="0" href="https://www.jssor.com" style="display:none;position:absolute;">web design</a>
+        <!-- Bullet Navigator -->
+        <div data-u="navigator" class="jssorb057" style="position:absolute;bottom:16px;right:16px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+            <div data-u="prototype" class="i" style="width:14px;height:14px;">
+                <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                    <circle class="b" cx="8000" cy="8000" r="5000"></circle>
+                </svg>
+            </div>
+        </div>
+        <!-- Arrow Navigator -->
+        <div data-u="arrowleft" class="jssora051" style="width:65px;height:65px;top:0px;left:25px;" data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+            </svg>
+        </div>
+        <div data-u="arrowright" class="jssora051" style="width:65px;height:65px;top:0px;right:25px;" data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+            <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+            </svg>
+        </div>
+    </div>
+    <script type="text/javascript">jssor_1_slider_init();
+    </script>
+    <!-- #endregion Jssor Slider End -->
+
+
+<br>
+<div class="row" id="gly">
+<div class="col-md-4">
+<div class="icon-wrapper" id="icon">
+<i class="glyphicon glyphicon-earphone workicon"></i>
+</div>
+<h2><marquee direction="left"><b class="head">Make a call</b></marquee></h2>
+<p id="four"> Make a call to gather information of different servises.</p>
+</div>
+<div class="col-md-4">
+<div class="icon-wrapper" id="icon">
+<i class="glyphicon glyphicon-shopping-cart workicon"></i>
+</div>
+<h2><marquee direction="left"><b class="head">Book online</b></marquee></h2>
+<p id="four"> Book online your appointment.</p>
+</div>
+<div class="col-md-4">
+<div class="icon-wrapper" id="icon">
+<i class="glyphicon glyphicon-ok workicon"></i>
+</div>
+<h2><marquee direction="left"><b class="head">Complete Detailing</b></marquee></h2>
+<p id="four"> get complete detailing and services at your beauty studio at afforable price.</p>
+</div>
+</div>
+
+<br>
+<div class="row text-center" id="view">
+<div class="col-md-12">
+<h4 id="italic">Experience the Art of Caring</h4>
+</div>
+</div>
+<br>
+<div class="row" id="cent">
+<div class="col-md-6">
+<img src="{% static 'sp.jpg' %}" height="400" width="100%"/>
+</div>
+<div class="col-md-6">
+<h3 class="head">Why Our Clients Choose Us</h3>
+<p id="font">We are the leading beauty studio  in Love Always providing high-quality hairdressing, makeup, and 
+skin care services to everyone. Our clients appreciate and value our level of customer service, 
+the skills of our stylists and estheticians as well as our professional approach to everything 
+we do.</p>
+</div>
+</div>
+<br>
+<br>
+<br>
+<div class="container-fluid">
+<div class="row text-center">
+<div class="col-md-12">
+<h3 class="head" id="hair">Our Services</h3>
+<p id="font">Treat yourself to one of our signature services. Our beloved beauty experts will wow your brows,
+ get you glowing and so much more. You’ll leave looking and feeling better than ever before.</p>
+ </div>
+ </div>
+ <br>
+ 
+ <div class="row text-center" id="servicediv">
+<div class="col-md-4">
+<img src="{% static 'fhc.png' %}" />
+<h3 class="head" id="hair">Haircut & Styling</h3>
+<p id="font">Improve your look with our professional haircut and hairstyling services.</p>
+ </div>
+ <div class="col-md-4">
+<img src="{% static 'fim.png' %}" />
+<h3 class="head" id="hair">Makeup</h3>
+<p id="font"> Our makeup experts will have you looking your best in less than 30 minutes.</p>
+ </div>
+ <div class="col-md-4">
+<img src="{% static 'fimp.jpg' %}" />
+<h3 class="head" id="hair">Manicure & Pedicure</h3>
+<p id="font">Pamper yourself with our manicure & pedicure services that will bring sensational results.</p>
+ </div>
+ <div class="col-md-4">
+<img src="{% static 'fis.png' %}" />
+<h3 class="head" id="hair">Skin Care</h3>
+<p id="font">We offer a full range of relaxing skin care services, including all types of facials.</p>
+ </div>
+ <div class="col-md-4">
+<img src="{% static 'fib.png' %}" />
+<h3 class="head" id="hair">Body Treatment</h3>
+<p id="font">Rejuvenate your body with our invigorating body treatments for a better relaxation.</p>
+ </div>
+ <div class="col-md-4">
+<img src="{% static 'fima.png' %}" />
+<h3 class="head" id="hair">Massage</h3>
+<p id="font">Our Massage Services can help you get rid of any negative emotions after a long busy day.</p>
+ </div>
+</div>
+
+<div class="row text-center" id="cent">
+<div class="col-md-6">
+<h1 class="head text-center" id="est">Works of Our Estheticians</h1>
+<h3 id="font" ><b>All our beauty experts create amazingly impressing beauty images, whether it’s for a 
+special occasion or not.</b></h3>
+<p id="font">In our gallery, you can look at the latest and the most popular works of our specialists. 
+It also includes the best moments and insights on how we make our visitors’ dreams come true. 
+</p>
+
+ </div>
+ 
+<div class="col-md-6">
+<img src="{% static 'hair.jpg' %}" height="300" width="100%"/>
+</div>
+</div>
+<br>
+<br>
+<div class="row " id="multi">
+		<div class="MultiCarousel" data-items="1,3,5,6" data-slide="1" id="MultiCarousel"  data-interval="1000">
+            <div class="MultiCarousel-inner">
+                <div class="item">
+                    <div class="pad15">
+                      <p class="head"><b>L'OREAL</b></p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                      <p class="head"><b>MAXFACTOR</b></p>
+                    </div>
+				</div>
+                <div class="item">
+                    <div class="pad15">
+                    <p class="head"><b>CHANEL</b></p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                     <p class="head"><b>MAC</b></p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                     <p class="head"><b>MATRIX</b></p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                     <p class="head"><b>LOTUS</b></p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                     <p class="head"><b>BIOTIQUE</b></p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pad15">
+                    <p class="head"><b>LAKME</b></p>
+                    </div>
+                </div>
+               
+            </div>
+            <!--<button class="btn btn-primary leftLst"><</button>
+            <button class="btn btn-primary rightLst">></button>-->
+        </div>
+	</div>
+	<br>	
+<div class="row text-center" id="leaf">
+<div class="col-md-6">
+<h3 class="head" id="est">Our Beauty Salon</h3>
+<p id="font">Beauty Studio offers beauty services of an utmost level to all LA residents and guests who are looking 
+for high-quality beauty care.
+Our Beauty Salon is based on the belief that our customers' needs are of the utmost importance. 
+Our entire team is committed to meeting those needs. As a result, a high percentage of our business
+ is from regular customers.</p>
+ </div>
+ <div class="col-md-6">
+ <img src="{% static 'sb1.jpg' %}" height="300" width="100%"/>
+ </div>
+ </div>
+ <div class="row text-center" class="studio">
+<div class="col-md-6">
+<img src="{% static 'sb3.jpg' %}" height="300" width="100%"/>
+</div>
+<div class="col-md-6">
+<p id="font">All our salons in LA are uniquely designed to offer our clients the best beauty, hairstyling, 
+and skin care experience, which we hope you and your body will appreciate. Let yourself relax and
+ be pampered at the best studio</p>
+</div>
+</div>
+<br>
+<br>
+<br>
+<div class="row text-center" class="stud">
+<div class="col-md-6">
+<h3 class="head" id="est">We are responsible for the quality of the services you receive!</h3>
+</div>
+<div class="col-md-6">
+<img src="{% static 'sb.jpg' %}" height="300" width="100%"/>
+</div>
+</div>	
+
+<div class="row text-center" id="port">
+<div class="col-md-12">
+<h3 class="head" id="est">Portfolio</h3>
+<p id="font">Check out the full portfolio of our works including haircuts, custom makeup, exclusive 
+manicure and pedicure, and more. All these works were performed by our skilled estheticians, 
+manicurists, and cosmetologists.</p>
+</div>
+</div>
+
+<div class="row" id="fade">
+<ul class="nav nav-tabs">
+  <li class="active"><a data-toggle="tab" href="#home" class="head">All</a></li>
+  <li><a data-toggle="tab" href="#menu1" class="head">Hair</a></li>
+  <li><a data-toggle="tab" href="#menu2" class="head">Makeup</a></li>
+  <li><a data-toggle="tab" href="#menu3" class="head">Manicure & Pedicure</a></li>
+  <li><a data-toggle="tab" href="#menu4" class="head">Other</a></li>
+</ul>
+
+<div class="tab-content">
+  <div id="home" class="tab-pane fade in active">
+  <div class="col-md-6">
+   <img src="{% static 'ppp2.jpg' %}"  height="400" width="100%">
+   </div>
+   <div class="col-md-3">
+  <img src="{% static 'eye.jpg' %}" height="200" width="100%"/>
+  <img src="{% static 'pak.jpg' %}" height="200" width="100%"/>
+  </div>
+  <div class="col-md-3">
+  <img src="{% static 'mp.png' %}" height="200" width="100%"/>
+  <img src="{% static 'sp.jpg' %}" height="200" width="100%"/>
+  </div>
+  </div>
+  <div id="menu1" class="tab-pane fade">
+
+  <div class="col-md-6">
+   <img src="{% static 'hair.jpg' %}"  height="400" width="100%">
+   </div>
+   <div class="col-md-3">
+  <img src="{% static 'h.jpg' %}" height="200" width="100%"/>
+  <img src="{% static 'h3.jpg' %}" height="200" width="100%"/>
+  </div>
+  <div class="col-md-3">
+  <img src="{% static 'h1.jpg' %}" height="200" width="100%"/>
+  <img src="{% static 'h2.jpg' %}" height="200" width="100%"/>
+  </div>
+  </div>
+  <div id="menu2" class="tab-pane fade">
+ 
+  <div class="col-md-6">
+   <img src="{% static 'ppp1.jpg' %}"  height="400" width="100%">
+   </div>
+   <div class="col-md-3">
+  <img src="{% static 'salon1.jpg' %}" height="200" width="100%"/>
+  <img src="{% static 'spa.f.jpg' %}" height="200" width="100%"/>
+  </div>
+  <div class="col-md-3">
+  <img src="{% static 'stu.jpg' %}" height="200" width="100%"/>
+  <img src="{% static 'm.jpg' %}" height="200" width="100%"/>
+  </div>
+  </div>
+  <div id="menu3" class="tab-pane fade">
+   
+  <div class="col-md-6">
+   <img src="{% static 'pe.jpg' %}"  height="400" width="100%">
+   </div>
+   <div class="col-md-3">
+  <img src="{% static 'pm1.jpg' %}" height="200" width="100%"/>
+  <img src="{% static 'pm2.jpg' %}" height="200" width="100%"/>
+  </div>
+  <div class="col-md-3">
+  <img src="{% static 'pm4.jpg' %}" height="200" width="100%"/>
+  <img src="{% static 'pm5.jpg' %}" height="200" width="100%"/>
+  </div>
+  </div>
+  <div id="menu4" class="tab-pane fade">
+    
+  <div class="col-md-4">
+   <img src="{% static 'b.jpg' %}"  height="200" width="100%">
+    <img src="{% static 'm.jpg' %}"  height="200" width="100%">
+  
+   </div>
+   <div class="col-md-4">
+  <img src="{% static 'bm1.jpg' %}" height="200" width="100%"/>
+  <img src="{% static 'bm2.jpg' %}" height="200" width="100%"/>
+  </div>
+  <div class="col-md-4">
+  <img src="{% static 'bm.jpg' %}" height="200" width="100%"/>
+  <img src="{% static 'stu.jpg' %}" height="200" width="100%"/>
+  </div>
+  
+  </div>
+</div>
+</div>
+
+{% endblock %}

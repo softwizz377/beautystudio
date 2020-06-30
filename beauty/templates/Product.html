@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+<div class="row text center" id="product">
+<div class="col-md-12">
+<p id="font">VIEW OUR</p>
+<h3 class="head">NEW COSMETICS PRODUCTS NOW</h3>
+</div>
+</div>
+<div class="row text-center" id="view">
+<div class="col-md-12">
+<h4 id="italic">Experience the Art of Caring</h4>
+</div>
+<div class="col-md-4">
+<img src="{% static 'h1b.png' %}" height="300px" width="100%"/>
+</div>
+<div class="col-md-4">
+<img src="{% static 'hhhh.png' %}" height="300px" width="100%"/>
+</div>
+<div class="col-md-4">
+<img src="{% static 'cos.png' %}" height="300px" width="100%"/>
+</div>
+</div>
+
+<div class="row text-center" class="prod" >
+{% for prod in products %}
+<div class="col-md-3">
+<div class="thumbnail">
+<a href=""><img src="/media/{{ prod.image }}" ></a>
+<a href=""><div class="productname"></a>
+<h1 id="productname" id="font">{{ prod.name }}</h1>
+</div>
+<div>
+<p class="productprice" id="font">Rs.{{ prod.price }}</p>
+</div>
+<form action='{% url "cart:cart_add" prod.id %}' method="post">
+	{% csrf_token %}
+	{{ cart_product_form }}
+	<div class="cart">
+	
+	<a><input type="submit" value="Add to cart" class="cartbutton1" id="fon"></a>
+	</div>
+
+	</form>
+
+</div>
+</div>
+
+{% endfor %}
+</div>
+<br>
+<div class="row text-center" id="discount">
+<div class="col-md-12">
+<h3 class="head">GET 10% DISCOUNT</h3>
+<p id="font">The face mailing Update on new arrival special discount new product.</p>
+</div>
+</div>
+<div class="row text-center" id="view">
+<div class="col-md-12">
+<h3 id="image"><marquee direction="left">New Arrival</marquee></h3>
+</div>
+<div class="col-md-3">
+<img src="{% static 'mil.jpg' %}" height="300px" width="100%"/>
+<p id="four">Milk Cream</p>
+</div>
+<div class="col-md-3">
+<img src="{% static 'bbbb.jpg' %}" height="300px" width="100%"/>
+<p id="four">Face Brush</p>
+</div>
+<div class="col-md-3">
+<img src="{% static 'bott.jpg' %}" height="300px" width="100%"/>
+<p id="four">Popular Perfume</p>
+</div>
+<div class="col-md-3">
+<img src="{% static 'back4.jpg' %}" height="300px" width="100%"/>
+<p id="four">Kewin Cream</p>
+</div>
+</div>
+
+
+{% endblock %}

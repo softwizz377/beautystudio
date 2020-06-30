@@ -1,0 +1,176 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+
+<div class="row text center" id="gallery">
+<div class="col-md-12">
+</div>
+</div>
+
+<br>
+<div class="row text-center" id="color" id="view">
+<div class="col-md-12">
+<h4 id="italic">Experience the Art of Caring</h4>
+</div>
+<div class="col-md-12">
+<h3 class="head" >Grid Gallery</h3>
+<p id="font">Check out the full portfolio of our works including haircuts, custom makeup, exclusive manicure 
+and pedicure, and more. All these works were performed by our skilled estheticians, manicurists, 
+and cosmetologists.</p>
+</div>
+</div> 
+<div class="row" id="fade">
+<ul class="nav nav-tabs">
+  <li class="active"><a data-toggle="tab" href="#home" class="head">All</a></li>
+  <li><a data-toggle="tab" href="#menu1" class="head">Hair</a></li>
+  <li><a data-toggle="tab" href="#menu2" class="head">Makeup</a></li>
+  <li><a data-toggle="tab" href="#menu3" class="head">Manicure & Pedicure</a></li>
+  <li><a data-toggle="tab" href="#menu4" class="head">Other</a></li>
+</ul>
+
+<div class="tab-content">
+  <div id="home" class="tab-pane fade in active">
+  <div class="col-md-6">
+   <img src="{% static 'salon3.png' %}"  height="300" width="100%">
+   <img src="{% static 'sbp.jpg' %}" height="300" width="100%"/>
+   </div>
+   <div class="col-md-3">
+  <img src="{% static 'eyg1.jpg' %}" height="300" width="100%"/>
+  <img src="{% static 'am1.jpg' %}" height="300" width="100%"/>
+  </div>
+  <div class="col-md-3">
+  <img src="{% static 'mp.png' %}" height="300" width="100%"/>
+  <img src="{% static 'fac.jpg' %}" height="300" width="100%"/>
+  </div>
+  </div>
+  <div id="menu1" class="tab-pane fade">
+
+  <div class="col-md-6">
+   <img src="{% static 'hs.jpg' %}"  height="400" width="100%">
+   </div>
+   <div class="col-md-3">
+  <img src="{% static 'hgall.jpg' %}" height="400" width="100%"/>
+  </div>
+  <div class="col-md-3">
+  <img src="{% static 'unnamed.jpg' %}" height="400" width="100%"/>
+  </div>
+  </div>
+  <div id="menu2" class="tab-pane fade">
+ 
+  <div class="col-md-6">
+   <img src="{% static 'pro.jpg' %}"  height="400" width="100%">
+   </div>
+   <div class="col-md-3">
+  <img src="{% static 'mak.jpg' %}" height="200" width="100%"/>
+  <img src="{% static 'facc.jpg' %}" height="200" width="100%"/>
+  </div>
+  <div class="col-md-3">
+  <img src="{% static 'fac.jpg' %}" height="400" width="100%"/>
+  
+  </div>
+  </div>
+  <div id="menu3" class="tab-pane fade">
+   
+  <div class="col-md-3">
+   <img src="{% static 'foot2.jpg' %}"  height="200" width="100%">
+   <img src="{% static 'hand.webp' %}" height="200" width="100%"/>
+   </div>
+   <div class="col-md-3">
+  <img src="{% static 'hand1.jpg' %}" height="200" width="100%"/>
+  <img src="{% static 'nail.jpg' %}" height="200" width="100%"/>
+  </div>
+  <div class="col-md-3">
+  <img src="{% static 'foot1.jpg' %}" height="200" width="100%"/>
+  <img src="{% static 'foot3.jpg' %}" height="200" width="100%"/>
+  </div>
+  <div class="col-md-3">
+  <img src="{% static 'pm2.jpg' %}" height="200" width="100%"/>
+  <img src="{% static 'pm4.jpg' %}" height="200" width="100%"/>
+  </div>
+  </div>
+  <div id="menu4" class="tab-pane fade">
+    
+  <div class="col-md-4">
+   <img src="{% static 'br2.jpg' %}"  height="400" width="100%">
+  </div>
+   <div class="col-md-4">
+  <img src="{% static 'bm4.jpg' %}" height="200" width="100%"/>
+  <img src="{% static 'bm2.jpg' %}" height="200" width="100%"/>
+  </div>
+  <div class="col-md-4">
+  <img src="{% static 'br.jpg' %}" height="200" width="100%"/>
+  <img src="{% static 'bm.jpg' %}" height="200" width="100%"/>
+  </div>
+  
+  </div>
+</div>
+</div>
+<br>
+
+<div class="row text center" id="container">
+<div class="col-md-12">
+<h3 id="container"> Gallery Images</h3>
+</div>
+<div id="images">
+    <div class="item">
+        <img src="{% static 'salon3.png' %}"/>
+    </div>
+    <div class="item">
+        <img src="{% static 'ssp.jpg' %}"/>
+    </div>
+    <div class="item">
+        <img src="{% static 'pm4.jpg' %}"/>
+    </div>
+    <div class="item">
+        <img src="{% static 'pm2.jpg' %}"/>
+    </div>
+    <div class="item">
+        <img src="{% static 'hs.jpg' %}"/>
+    </div>
+    <div class="item">
+        <img src="{% static 'bac.jpg' %}"/>
+    </div>
+    <div class="item">
+        <img src="{% static 'am1.jpg' %}"/>
+    </div>
+    <div class="item">
+        <img src="{% static 'br2.jpg' %}"/>
+    </div>
+    <div class="item">
+        <img src="{% static 'stu.jpg' %}"/>
+    </div>
+    <div class="item">
+        <img src="{% static 'we.jpg' %}"/>
+    </div>
+   
+</div>
+</div>
+<br>
+<div class="row" id="color" id="team">
+<h3 class="head" id="hair">My Team</h3>
+<div class="col-md-3">
+<img src="{% static 'kri.jfif' %}" height="300" width="100%"/>
+<h3 class="head">Parminder</h3>
+<p id="font">Hairstylist</p>
+</div>
+<div class="col-md-3">
+<img src="{% static 'nimr.jpg' %}" height="300" width="100%"/>
+<h3 class="head">Nimrat</h3>
+<p id="font">pedicure & Medicure</p>
+</div>
+<div class="col-md-3">
+<img src="{% static 'nat.jpg' %}" height="300" width="100%"/>
+<h3 class="head">kritika</h3>
+<p id="font">Junior Makeup Artist</p>
+</div>
+<div class="col-md-3">
+<img src="{% static 'deep.jpg' %}" height="300" width="100%"/>
+<h3 class="head">Radika</h3>
+<p id="font">Senior Stylist</p>
+</div>
+
+</div>
+
+
+{% endblock %}
